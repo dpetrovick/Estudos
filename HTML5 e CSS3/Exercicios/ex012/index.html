@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos em HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos locais</h1>
+    <p>Este video está no meu servidor</p>
+    <p>Os videos podem ser postados de duas formas (estando no seu servidor)</p>
+    <ul>
+        <li>Forma 1:</li>
+        <video src="midia/meu-video.mp4" width="560px" height="315px" controls></video>
+        <li>forma 2:</li>
+        <video poster="imagens/capa.png" width="560px" height="315px" controls>
+            <source src="midia/meu-video.mp4" type="audio/mp4">
+            <source src="midia/Meu-Video.webm" type="audio/webm">
+            <source src="midia/meu-video.ogv" type="audio/ogg">
+        </video>
+    </ul>
+
+    <h1>Inserindo videos da intrnet (youtube ou vimeo)</h1>
+    <!--Vai no site do youtube ou vimeo e mada compartilhar. Copia a codificação inteira e cola.-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/DjOSM72cYac" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+</body>
+</html>

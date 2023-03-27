@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 007</title>
+</head>
+<body>
+    <h1>Desafio de imagens flexível</h1>
+    <p>Altere o tamanho da janela para que as imagens sejam trocadas!</p>
+    <picture>
+        <source media="(max-width: 350px )" srcset="imagens/onda-p.png" type="image/png">
+        <source media="(max-width: 850px )" srcset="imagens/onda-m.png" type="image/png">
+        <img src="imagens/onda-g.png" alt="Foto flexível">
+    </picture>
+</body>
+</html>
