@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mída em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir em dispositivos com resoluções diferentes!</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/foto-P.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/foto-M.png" type="image/png">
+        <img src="Imagens/foto-G.png" alt="Imagem G">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos reproduzir áudio em HTML5 de duas formas:</p>
+    <ul>
+        <li>forma 1:</li>
+        <audio src="midia/nate-blaze.mp3" controls></audio>
+        <li>Forma 2:</li>
+        <audio preload="metadata" controls>
+            <source src="midia/nate-blaze.mp3" type="audio/mpeg">
+            <source src="midia/nate-blaze.ogg" type="audio/ogg">
+            <source src="midia/nate-blaze.wav" type="audio/wav">
+            <p>Infelimente seu navegador não reproduz o audio. <a href="midia/nate-blaze.mp3">Clique aqui</a>para baixar</p>
+        </audio>
+        <!--A diferença entre as opções de audio é que na primeira o navegador só vai reproduzir o áudio que eu coloquei. Se for incompatível, não toca. Na segunda ele vai tentando nos formatos disponibilizdos. Ver PDF da aula de Guanabara-->
+    </ul>
+    
+</body>
+</html>
