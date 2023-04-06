@@ -5,8 +5,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grouping Tag</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(189, 182, 182);
+            margin: 0px;
+        }
+
+        header {
+            background-color: lightgoldenrodyellow;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        header > h1 {
+            margin: 8px;
+        }
+
+        main {
+            background-color: lightcyan;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 30px;
+            box-shadow: 5px 4px 5px 1px rgba(0, 0, 0, 0.432);
+        }
+
+        nav {
+            width: 300px;
+            background-color: rgb(185, 190, 196);
+            padding: 0;
+            margin: 0;
+            box-shadow: 5px 4px 7px 1px rgba(0, 0, 0, 0.432);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: rgb(153, 15, 15);
+            margin: 8px;
+            padding: 8px;
+        }
+
+        nav > a:hover {
+            color: darkgreen;
+            font-size: 17px;
+        }
+
+        footer {
+            background-color: black;
+            color: lightgray;
+            text-align: center;
+            margin: 0px;
+            padding: 3px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <h1>Meu site</h1>
+            <nav>
+                <a href="#">link</a>
+                <a href="#">link</a>
+                <a href="#">link</a>
+                <a href="#">link</a>
+                <a href="#">link</a>
+            </nav> 
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esporte    Política    Entretanimewnto     Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre "Lorem Y"</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, atque est. Illo quod repudiandae error, soluta dignissimos commodi quas a accusantium porro aliquam pariatur praesentium ex, quasi, repellendus enim voluptatum?</p>
+                <aside>
+                    <p>Feito por Denys Petrovick</p>
+                </aside>
+            </article>
+            <article>
+                <h2>Latin com "Lorem Y"</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ratione voluptatibus ipsum vel id, odit excepturi officiis repellat dolor consequatur possimus iusto, reiciendis nulla explicabo pariatur maxime ab aut rem.</p>
+                <aside>Feito por Denys Petrovick</aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Criado por Denys petrovick: &copy; 2023</p>
+    </footer>
 </body>
 </html>
