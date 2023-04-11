@@ -7,7 +7,7 @@
 
 @font-face { /*Importa uma fonte baixada*/
 
-    font-family: "Android";
+    font-family: "android";
     src: url(../fontes/idroid.otf) format("opentype");
     font-weight: normal;
 
@@ -40,8 +40,8 @@ body {
 
 
 header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
     min-height: 150PX;
-    background-color: var(--cor4);
     padding-top: 30px;
     text-align: center;
 }
@@ -65,6 +65,24 @@ header > p { /*Configura o parágrafo apenas do header*/
 
 nav {
     background-color: var(--cor5);
+    padding:  10px;
+    font-weight: bold;
+}
+
+nav > a {
+    color: lightgray;
+    text-decoration: none;
+    padding: 10px;
+    transition-duration: .5s;
+    border-radius: 5px;
+   
+}
+
+nav > a:hover {
+    background-color: var(--cor3);
+    color: var(--cor5);
+    
+    
 }
 
 main { /* O min e o max torna o site responsivo. A margem auto é para por o bloco no centro da tela (site). Temos o padding para separar margem interna da borda, um border-radius que torna os cantos arrendondados, um border que é o contorno do bloco, um box-shadow que é a sombra.*/
@@ -81,17 +99,47 @@ main { /* O min e o max torna o site responsivo. A margem auto é para por o blo
     
 }
 
-main > h1 {
+main h1 { /*N]ao se usa o ">" quando a tag configurada esta dentro de outra. Neste caso o h1 está dentro de um article dentro de um main */
     font-family: var(--font-android);
     color: var(--cor5);
+    
 }
 
-main > h2 {
+main h2 { /*N]ao se usa o ">" quando a tag configurada esta dentro de outra. Neste caso o h2 está dentro de um article dentro de um main */
     font-family: var(--font-android);
+    color: var(--cor4);
+    font-size: 1.2em;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    text-indent: 8px;
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
 }
 
 main > img { /* Torna a imagem 100% dentro do bloco responsiva*/
     width: 100%;
+}
+
+main strong {
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    padding: 2px 6px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor3);
 }
 
 main img.pequena { /*Imagem não é blobo por isso não centraliza. Usa o display para transformar em bloco e depois centraliza com o margin outo*/
@@ -102,4 +150,5 @@ main img.pequena { /*Imagem não é blobo por isso não centraliza. Usa o displa
 footer { /*Rodapé da página*/
     background-color: var(--cor5);
     color: white;
+    text-align: center;
 }
