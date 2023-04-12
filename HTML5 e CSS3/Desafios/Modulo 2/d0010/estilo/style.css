@@ -42,6 +42,7 @@ body {
 header {
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
     min-height: 150PX;
+    margin-top: 40px;
     padding-top: 30px;
     text-align: center;
 }
@@ -99,13 +100,13 @@ main { /* O min e o max torna o site responsivo. A margem auto é para por o blo
     
 }
 
-main h1 { /*N]ao se usa o ">" quando a tag configurada esta dentro de outra. Neste caso o h1 está dentro de um article dentro de um main */
+main h1 { /*Não se usa o ">" quando a tag configurada esta dentro de outra. Neste caso o h1 está dentro de um article dentro de um main */
     font-family: var(--font-android);
     color: var(--cor5);
     
 }
 
-main h2 { /*N]ao se usa o ">" quando a tag configurada esta dentro de outra. Neste caso o h2 está dentro de um article dentro de um main */
+main h2 { /*Não se usa o ">" quando a tag configurada esta dentro de outra. Neste caso o h2 está dentro de um article dentro de um main */
     font-family: var(--font-android);
     color: var(--cor4);
     font-size: 1.2em;
