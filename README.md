@@ -1,2 +1,2 @@
 # Estudos
- Curso de HTML5 e CSS3 do Curso em Video
+ Cursos em geral do curso em vídeo.
