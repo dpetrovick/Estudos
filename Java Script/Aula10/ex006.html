@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Java Script</title>
+    <style>
+        #area{
+            font: bold 16px Arial;
+            width: 200px;
+            height: 200px;
+            line-height: 200px; /*desse a linha para a posição que quiser*/
+            background-color: rgb(22, 100, 22);
+            color: white;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+    <!-- <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">-->
+        Interaja...
+    </div>
+    <script>
+        var a = document.getElementById("area")
+        a.addEventListener("click", clicar)
+        a.addEventListener("mouseenter", entrar)
+        a.addEventListener("mouseout", sair)
+
+        function clicar() {
+           /* var a = document.getElementById("area")*/
+            a.innerText = "Clicou!"
+        }
+        function entrar() {
+            /*var e = document.getElementById("area")
+            e.style.backgroundColor = "red"*/
+            a.style.backgroundColor = "red"
+        }
+        function sair(){
+            /*var s = document.getElementById("area")
+            s.style.backgroundColor = "rgb(22, 100, 22)"
+            s.innerText = "Interaja..."*/
+            a.style.backgroundColor = "rgb(22, 100, 22)"
+            a.innerText = "Interaja..."
+        }
+    </script>
+</body>
+</html>

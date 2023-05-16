@@ -9,16 +9,24 @@
         body {
             background-color: rgb(68, 125, 199);
             color: white;
-            font: normal 18pt arial;
+            font: normal 18px arial;
         }
     </style>
 </head>
 <body>
-    <h1>Inciaindo estudos em DOM</h1>
+    <h1 id="tit">Inciaindo estudos em DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Apresndo a usar o <strong>DOM</strong> em JavaScript.</p>
-    <div>Clique em mim</div>
+    <div id="msg">Clique em mim</div>
     <script>
+        //document.getElementById("tit").innerHTML = "teste"
+        var titulo = document.getElementById("tit")
+        titulo.innerHTML = "teste"
+        titulo.style.color = "yellow"
+        titulo.style.backgroundColor = "gray" 
+        var bloco = document.querySelector ("#msg")
+        bloco.style.backgroundColor = "green"
+        bloco.style.color = "black"
 
     </script>
 </body>
