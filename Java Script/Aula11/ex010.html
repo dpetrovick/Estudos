@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    Velocidade do carro: <input type="number" name="txtvel" id="txtvel">km/h
+    <input type="button" value="Verificar" onclick="calcVel()">
+    <div id="resp">
+
+    </div>
+    <script>
+        function calcVel(){
+            var idvel = document.getElementById("txtvel")
+            var resp = document.getElementById("resp")
+            var vel = Number(idvel.value) //Só para converter o valor do da entrada txtvel em número.
+
+            resp.innerHTML = `<br>Sua velocidade atual é de ${vel}km/h!`
+            if (vel > 80) {
+                resp.innerHTML = `<br>Sua velovidade computada foi de <strong>${vel}km/h!</strong> Você foi multado por estar acima da velocidade máxima permitida que é de 80km/h`
+            }
+            resp.innerHTML += "<br>Dirija sempre com prudência e segurança!"
+        }
+    </script>
+</body>
+</html>
