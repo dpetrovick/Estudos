@@ -22,3 +22,6 @@ function saudacao() {
 
 }
    
+// para pegar a hora atual do computador :
+// var agora = new Date() - cria uma variavel para recer a "data atual"
+// var hora = agora.getHours() - cria uma variavel para dentro da data atual pegar a hora atual.
