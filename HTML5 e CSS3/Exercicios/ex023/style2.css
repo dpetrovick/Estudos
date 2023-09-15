@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+Body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(240, 240, 201);
+}
+
+table {
+    border-collapse: collapse;
+    width: 450px;
+    height: 850px;
+    position: relative; /*Passo obrigatório para fixar o cabeçalho*/
+}
+
+table > caption {
+    margin: auto;
+}
+
+caption {
+    font-size: 18px;
+    color: blueviolet;
+    background-color: yellow;
+    width: 290px;
+}
+
+th, tfoot {
+    background-color: gray;
+    color: white;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+thead > tr > th {/*Obrigatório usar a sequência*/
+    position: sticky; /*para fixar o cabeçalho da tabela no topo*/
+    top: -1px;
+    background-color: gray;
+}
+
+td {
+    border: 1px solid black;
+    padding: 5px;
+    
+}
+
+tbody {
+    background-color: azure;
+}
+
+tbody > tr:nth-child(2n) { /*A expressão ":nth-child()" é uma pseudo classe, onde ela faz a altrnância do que informou dentro das {}. O 2n é para aplicar a cada duas linhas. Podemos usar odd (impar) e even (par) ao invés do 2n para par e 2n-1 para impar*/
+    background-color: lightgray;
+
+}
+.numero {
+    text-align: right;
+}
+#numero {
+    text-align: right;
+}

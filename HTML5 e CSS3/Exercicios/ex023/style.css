@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+Body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(240, 240, 201);
+}
+
+table {
+    border-collapse: collapse;
+    width: 400px;
+}
+
+td {
+    background-color: azure;
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center; /*Alinhamwento horizontal*/
+    vertical-align: top;/*Alinhamwento vertical*/
+}
